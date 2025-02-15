@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="src/style.css"> -->
+  </head>
+  <body class="m-auto">
+    <!-- header content -->
+    <header
+      class="flex justify-between items-center px-4 py-2 fixed z-50 w-full bg-white"
+    >
+      <div class="flex justify-center items-center gap-3">
+        <button
+          onclick="document.getElementById('menu').classList.toggle('hidden')"
+          class="md:hidden text-2xl flex justify-center items-center size-6"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+            <path
+              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+            />
+          </svg>
+        </button>
+        <div>
+          <img src="assets/images/logo (2).png" alt="Logo" class="p-2" />
+        </div>
+      </div>
+      <nav
+        id="menu"
+        class="hidden md:flex flex-col md:flex-row md:space-x-6 list-none absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0"
+      >
+        <li class="py-2 px-4">
+          <a
+            href="index.html"
+            class="block items-center text-[#FFCE51] rounded-xl"
+            >Home</a
+          >
+          <img class="mx-auto" src="assets/images/Leaf.png" alt="" />
+        </li>
+        <li><a href="#" class="block py-2 px-4">About Us</a></li>
+        <li><a href="#" class="block text-[#1acd17] py-2 px-4">Products</a></li>
+        <li><a href="#" class="block py-2 px-4">Contact</a></li>
+      </nav>
+
+      <button
+        class="bg-[#003215] text-white text-xs px-4 py-2 rounded-full hover:bg-[#004315]"
+      >
+        CONTACT US
+      </button>
+    </header>
+    <!-- section content -->
+    <section class="pt-16">
+      <div class="py-10 text-center flex flex-col">
+        <h1 class="text-5xl pb-4 font-bold text-[#003215]">Fit Fiber</h1>
+        <p class="text-4xl pb-4 font-medium text-[#003215]">
+          Change everything you need
+        </p>
+        <p>
+          At Japonix LLC, we blend science and nature to craft premium dietary
+          supplements, nutritional <br />
+          products, and food ingredients. Discover the essence of wellness in
+          every product.
+        </p>
+      </div>
+      <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-20">
+        <div class="text-center mb-4">
+          <div class="text-green-600 font-bold text-2xl">
+            <span class="text-red-500">F</span>it<span class="text-red-600"
+              >F</span
+            >
+            iber<span class="text-black">™</span>
+          </div>
+          <div class="font-bold text-lg mb-10">PRODUCT DATA SHEET</div>
+        </div>
+        <div class="mb-10">
+          <div class="font-bold">
+            Product Name: FitFiber™ AG (PHGG-Partially Hydrolyzed Guar Gum)
+          </div>
+          <div>
+            Code: JAP1001 | Synonyms: Galactomannan Fiber, Guar Fiber | CAS No.
+            11078-30-1
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="font-bold text-lg text-center">
+            PHYSIOCHEMICAL PROPERTIES
+          </div>
+          <table class="w-full mt-2 border border-gray-300">
+            <thead>
+              <tr class="bg-gray-200">
+                <th class="text-left border border-gray-300 p-2 w-72">Items</th>
+                <th class="text-left border border-gray-300 p-2">
+                  Specifications
+                </th>
+                <th class="text-left border border-gray-300 p-2">Method</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2">Color</td>
+                <td class="border border-gray-300 p-2">
+                  White to yellowish powder granulated
+                </td>
+                <td class="border border-gray-300 p-2">Organoleptic</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Odor & taste</td>
+                <td class="border border-gray-300 p-2">Characteristic</td>
+                <td class="border border-gray-300 p-2">Organoleptic</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Foreign matter</td>
+                <td class="border border-gray-300 p-2">
+                  No visible foreign impurities
+                </td>
+                <td class="border border-gray-300 p-2">Organoleptic</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Moisture(%)</td>
+                <td class="border border-gray-300 p-2">≤ 10.0</td>
+                <td class="border border-gray-300 p-2">USP</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Ash(%)</td>
+                <td class="border border-gray-300 p-2">≤ 1.5</td>
+                <td class="border border-gray-300 p-2">AOAC 900.02</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Protein(%)</td>
+                <td class="border border-gray-300 p-2">≤ 2.0</td>
+                <td class="border border-gray-300 p-2">AOAC 984.13</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">pH</td>
+                <td class="border border-gray-300 p-2">6.0~7.0</td>
+                <td class="border border-gray-300 p-2">pH Meter(5% Soln)</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Loose Bulk Density</td>
+                <td class="border border-gray-300 p-2">0.2-0.3</td>
+                <td class="border border-gray-300 p-2">LBD</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Viscosity(mPas)</td>
+                <td class="border border-gray-300 p-2">1-30</td>
+                <td class="border border-gray-300 p-2">
+                  Brookfield viscometer(5% soln)
+                </td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Dietary fiber content(%)
+                </td>
+                <td class="border border-gray-300 p-2">≥ 85.0</td>
+                <td class="border border-gray-300 p-2">AOAC 2022.01</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Dietary fiber(AMW)</td>
+                <td class="border border-gray-300 p-2">≤200,000</td>
+                <td class="border border-gray-300 p-2">HPLC</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mb-4">
+          <div class="font-bold text-lg text-center">MICROBIOLOGICAL TESTS</div>
+          <table class="w-full mt-2 border border-gray-300">
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2 w-64">
+                  Total Plate count (Cfu/g)
+                </td>
+                <td class="border border-gray-300 p-2 w-72">≤ 1000</td>
+                <td class="border border-gray-300 p-2 w-52">USP</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Yeast & Molds (Cfu/g)
+                </td>
+                <td class="border border-gray-300 p-2">≤ 50</td>
+                <td class="border border-gray-300 p-2">USP</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Coliforms(g)</td>
+                <td class="border border-gray-300 p-2">Negative</td>
+                <td class="border border-gray-300 p-2">ISO 4831:2006</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">
+                  Staphylococcus aureus(/10g)
+                </td>
+                <td class="border border-gray-300 p-2">Negative</td>
+                <td class="border border-gray-300 p-2">USP</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">E.coli(/10g)</td>
+                <td class="border border-gray-300 p-2">Negative</td>
+                <td class="border border-gray-300 p-2">USP</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Salmonella(/10g)</td>
+                <td class="border border-gray-300 p-2">Negative</td>
+                <td class="border border-gray-300 p-2">USP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="mb-4">
+          <div class="font-bold text-lg text-center">ADDITIONAL TEST</div>
+          <table class="w-full mt-2 border border-gray-300">
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 p-2 w-72">Lead (mg/kg)</td>
+                <td class="border border-gray-300 p-2 w-72">≤0.2</td>
+                <td class="border border-gray-300 p-2">ICP-MS</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Arsenic(mg/Kg)</td>
+                <td class="border border-gray-300 p-2">≤0.5</td>
+                <td class="border border-gray-300 p-2">ICP-MS</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Cadmium(mg/kg)</td>
+                <td class="border border-gray-300 p-2">≤0.2</td>
+                <td class="border border-gray-300 p-2">ICP-MS</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Mercury(mg/Kg)</td>
+                <td class="border border-gray-300 p-2">≤0.02</td>
+                <td class="border border-gray-300 p-2">ICP-MS</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Pesticides</td>
+                <td class="border border-gray-300 p-2">
+                  Comply with EU reg.396/2005
+                </td>
+                <td class="border border-gray-300 p-2">GC-MS/LC-MS</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 p-2">Aflatoxin B1(μg/kg)</td>
+                <td class="border border-gray-300 p-2">≤2.0</td>
+                <td class="border border-gray-300 p-2">LC-MS</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-sm font-bold mt-10">
+          Disclaimer: The data in this document are based on our present
+          knowledge and experience. The users of this material are obliged to
+          carry out their own tests upon receipt of goods and prior to use. It
+          is the responsibility of the user to comply with applicable laws and
+          regulations.
+        </div>
+      </div>
+
+      <!-- 5th content start  -->
+
+      <div>
+        <h1 class="font-manrope font-bold text-center md:text-3xl">
+          Contact Our Team
+        </h1>
+        <p class="text-center md:mt-10">
+          Lorem ipsum dolor sit amet consectetur. Amet cras molestie consequat
+          morbi. Dapibus id urna consequat morbi orci eget. Diam <br />
+          aliquam ultrices aliquam enim justo aliquet. Lectus aliquam tellus
+          vestibulum faucibus et pulvinar quam.
+        </p>
+      </div>
+      <div class="md:flex md:justify-center">
+        <div>
+          <div class="md:flex md:mt-10">
+            <div class="mb-4 px-5">
+              <label
+                for="first_name"
+                class="block text-sm font-medium text-gray-700"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                placeholder="First Name"
+                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+              />
+            </div>
+            <div class="mb-4 px-5">
+              <label
+                for="last name"
+                class="block text-sm font-medium text-gray-700"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                id="last name"
+                name="last name"
+                placeholder="Last Name"
+                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+              />
+            </div>
+          </div>
+
+          <div class="mb-4 px-5">
+            <label for="email" class="block text-sm font-medium text-gray-700"
+              >Email</label
+            >
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="You@company.com"
+              class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+            />
+          </div>
+          <div class="mb-4 px-5">
+            <label
+              for="phone-number"
+              class="block text-sm font-medium text-gray-700"
+              >Phone Number</label
+            >
+            <div class="mt-1 flex">
+              <select
+                id="country-code"
+                name="country-code"
+                class="block w-20 rounded-l-md border border-[#0000002] bg-gray-100 p-2 focus:border-blue-500 focus:ring-blue-500"
+              >
+                <option value="+91">IND</option>
+                <option value="+1">USA</option>
+                <option value="+44">UK</option>
+                <option value="+61">Australia</option>
+                <option value="+81">Japan</option>
+              </select>
+              <input
+                type="text"
+                id="phone-number"
+                name="phone-number"
+                placeholder="Phone Number"
+                class="block w-full rounded-r-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+              />
+            </div>
+            <div class="mb-4">
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Type your message here..."
+                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"
+              ></textarea>
+            </div>
+            <button
+              class="bg-[#003215] text-white w-full rounded-2xl py-2 hover:bg-[#3b7654]"
+            >
+              Send Message
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-10 mx-5 flex justify-center">
+          <div>
+            <div class="flex">
+              <img class="p-5" src="assets/images/icons8_marker 1.png" alt="" />
+              <div class="flex flex-col justify-center">
+                <p>Send your queries</p>
+                <a href="#">info@japonix.com</a>
+              </div>
+            </div>
+            <div class="flex">
+              <img
+                class="p-5"
+                src="assets/images/icons8_marker 1 (1).png"
+                alt=""
+              />
+              <div class="flex flex-col justify-center">
+                <p>Get In Contact</p>
+                +17167445110
+              </div>
+            </div>
+            <div class="flex py-2">
+              <img
+                class="p-5"
+                src="assets/images/icons8_marker 1 (2).png"
+                alt=""
+              />
+              <div class="flex flex-col justify-center">
+                <p>Visit Us</p>
+                <a href="#"
+                  >01 East Benton Place, Chicago,<br />
+                  Cook County, Illinois, 60601</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5th content end  -->
+    </section>
+
+    <footer class="bg-[#003215] p-5 mt-32">
+      <div
+        class="bg-[#003215] p-5 flex flex-col items-center md:flex-row justify-between"
+      >
+        <img class="w-32 p-2 mb-5" src="assets/images/Group 2 (1).png" alt="" />
+        <div class="p-2">
+          <p class="text-white text-center md:text-justify md:pl-2">
+            Follow Us On
+          </p>
+
+          <div class="flex">
+            <a href="#"
+              ><img
+                class="p-2"
+                src="publicassets/images/icons8_facebook 1.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="p-2"
+                src="publicassets/images/icons8_instagram 1.png"
+                alt=""
+            /></a>
+            <a href="#"
+              ><img class="p-2" src="publicassets/images/x.png" alt=""
+            /></a>
+            <a href="#"
+              ><img
+                class="p-2"
+                src="publicassets/images/icons8_linkedin 1.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="text-white text-center font-light text-[15px] border-t-2 border-gray-500 pt-5"
+      >
+        Copyright © 2025 japonix. All rights reserved
+      </div>
+    </footer>
+
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: "auto", // Auto-size slides
+        spaceBetween: 20, // Space between slides
+        loop: true, // Infinite looping
+        autoplay: {
+          delay: 0, // No delay
+          disableOnInteraction: false,
+        },
+        speed: 3000, // Adjust speed for smooth scrolling
+      });
+    </script>
+  </body>
+</html>
