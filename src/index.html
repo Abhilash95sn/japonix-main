@@ -12,11 +12,6 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- <link rel="stylesheet" href="src/style.css"> -->
   </head>
   <body class="m-auto">
     <style>
@@ -186,7 +181,9 @@
         ingredients, we deliver solutions that empower healthier lives.
       </div>
       <a href="#">
-        <div class="swiper-container mt-10 h-16 p-6 bg-[#0032154D] bg-opacity-30">
+        <div
+          class="swiper-container mt-10 h-16 p-6 bg-[#0032154D] bg-opacity-30"
+        >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="assets/images/Fit Fiber.png" alt="" />
@@ -431,9 +428,7 @@
                 src="assets/images/icons8_instagram 1.png"
                 alt=""
             /></a>
-            <a href="#"
-              ><img class="p-2" src="assets/images/x.png" alt=""
-            /></a>
+            <a href="#"><img class="p-2" src="assets/images/x.png" alt="" /></a>
             <a href="#"
               ><img
                 class="p-2"
@@ -450,17 +445,20 @@
         Copyright © 2025 japonix. All rights reserved
       </div>
     </footer>
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: "auto", // Auto-size slides
-        spaceBetween: 20, // Space between slides
-        loop: true, // Infinite looping
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        loop: true,
         autoplay: {
-          delay: 0, // No delay
+          delay: 1, // Minimized delay for continuous scrolling
           disableOnInteraction: false,
         },
-        speed: 3000, // Adjust speed for smooth scrolling
+        speed: 3000, // Controls the speed of the scroll
+        allowTouchMove: false, // Disables manual dragging
+        freeMode: true, // Allows continuous movement without snapping
       });
     </script>
   </body>
