@@ -12,6 +12,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <style>
+       html{
+      scroll-behavior: smooth;
+    }
+    </style>
   </head>
 
   <body class="m-auto">
@@ -80,7 +85,7 @@
         </li>
         <li>
           <a
-            href="contact.html"
+            href="#contact"
             class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center"
           >
             Contact
@@ -92,12 +97,14 @@
           </a>
         </li>
       </nav>
-
-      <button
-        class="bg-[#003215] text-white text-xs px-4 py-2 rounded-full hover:bg-[#004315]"
-      >
-        CONTACT US
-      </button>
+<a href="#contact">
+  <button
+  class="bg-[#003215] text-white text-xs px-4 py-2 rounded-full hover:bg-[#004315]"
+>
+  CONTACT US
+</button>
+</a>
+      
     </header>
     <!-- section content -->
     <section class="pt-16">
@@ -254,10 +261,10 @@
 
       <!-- banner -->
       <div class="w-full mx-auto my-10 lg:my-20 px-4">
-        <div class="bg-darkgreen rounded-3xl">
+        <div class="bg-green-950 rounded-3xl">
           <div class="flex flex-wrap items-center p-8 justify-between">
             <div
-              class="text-accentyellow font-bold md:text-3xl lg:text-5xl text-2xl w-full sm:w-1/2 p-4"
+              class="text-primary font-bold md:text-3xl lg:text-5xl text-2xl w-full sm:w-1/2 p-4"
             >
               Competitive pricing with professional service.
             </div>
@@ -315,7 +322,7 @@
       <!-- 4th content end  -->
       <!-- 5th content start  -->
 
-      <div>
+      <div id="contact">
         <h1 class="font-manrope font-bold text-center md:text-3xl">
           Contact Our Team
         </h1>
