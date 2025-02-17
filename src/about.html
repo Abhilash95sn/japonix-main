@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <link href="./output.css" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="m-auto">
+
+  <!-- header content -->
+  <header class="flex justify-between items-center px-4 py-2 fixed z-50 w-full bg-white">
+    <div class="flex justify-center items-center gap-3">
+      <button onclick="document.getElementById('menu').classList.toggle('hidden')"
+        class="md:hidden text-2xl flex justify-center items-center size-6">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+        </svg>
+      </button>
+      <div>
+        <img src="assets/images/logo (2).png" alt="Logo" class="p-2" />
+      </div>
+    </div>
+    <nav id="menu"
+      class="hidden md:flex flex-col md:flex-row md:space-x-6 list-none absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0">
+      <li>
+        <a href="index.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+          Home
+          <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="about.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+          About Us
+          <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="product.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+          Products
+          <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+        </a>
+      </li>
+      <li>
+        <a href="contact.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+          Contact
+          <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+        </a>
+      </li>
+    </nav>
+
+    <button class="bg-[#003215] text-white text-xs px-4 py-2 rounded-full hover:bg-[#004315]">
+      CONTACT US
+    </button>
+  </header>
+  <!-- section content -->
+  <section class="pt-16">
+    <!-- 1st section  start-->
+    <div class="w-full h-[20vh] bg-cover bg-center px-4 py-10 lg:p-24 flex flex-col justify-center items-center"
+      style="background-image: linear-gradient(to top, black, transparent), url('assets/images/8a3ec4eca9e2e81de163dced80227ad6.jpeg');">
+      <!-- <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div> -->
+      <div
+        class="font-manrope text-white text-center items-center font-bold text-3xl lg:text-8xl md:mt-28 sm:text-5xl pb-20">
+        About Us
+      </div>
+    </div>
+
+
+
+
+    <!-- 4th content start  -->
+
+    <div class="lg:mt-10 items-center md:justify-around md:flex">
+      <div class="md:mb-10 px-4 md:w-2/5 xl:w-1/3">
+        <h1 class="text-2xl font-bold md:text-4xl">
+          Science and Nature in Perfect Harmony
+        </h1>
+        <p class="mt-5 text-justify mb-4">
+          At Japonix LLC, we bridge the gap between science and nature to create premium dietary supplements,
+          nutritional products, and food ingredients. Rooted in innovation and guided by a commitment to health and
+          wellness, our formulations harness the best of nature while being backed by rigorous scientific research.
+
+          We believe that true well-being starts with high-quality ingredients, which is why we meticulously source and
+          develop safe, effective, and sustainably crafted products. Whether you're seeking better nutrition, enhanced
+          vitality, or overall wellness, Japonix LLC is dedicated to delivering trusted solutions that empower a
+          healthier lifestyle.
+
+          Experience the essence of wellness in every product we create.
+
+
+        </p>
+      </div>
+      <div class="rounded md:w-1/2 px-4">
+        <img src="assets/images/about-image.png" class="rounded-xl" alt="" />
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+  <footer class="bg-[#003215] p-5 mt-10 md:mt-32">
+    <div class="bg-[#003215] p-5 flex flex-col items-center md:flex-row justify-between">
+      <img class="w-32 p-2 mb-5" src="assets/images/Group 2 (1).png" alt="" />
+      <div class="p-2">
+        <p class="text-white text-center md:text-justify md:pl-2">
+          Follow Us On
+        </p>
+
+        <div class="flex gap-4">
+          <a href="#"><img class="p-2" src="assets/images/icons8_facebook 1.png" alt="" /></a>
+          <a href="#"><img class="p-2" src="assets/images/icons8_instagram 1.png" alt="" /></a>
+          <a href="#"><img class="p-2" src="assets/images/x.png" alt="" /></a>
+          <a href="#"><img class="p-2" src="assets/images/icons8_linkedin 1.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-white text-center font-light text-[15px] border-t-2 border-gray-500 pt-5">
+      Copyright © 2025 japonix. All rights reserved
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: "4",
+
+      loop: true,
+      autoplay: {
+        delay: 1, // Minimized delay for continuous scrolling
+        disableOnInteraction: false,
+      },
+      speed: 6000, // Controls the speed of the scroll
+      allowTouchMove: false, // Disables manual dragging
+      freeMode: true, // Allows continuous movement without snapping
+    });
+  </script>
+  <!-- nav-highlight -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

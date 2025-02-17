@@ -13,48 +13,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
   </head>
+
   <body class="m-auto">
-    <style>
-      .swiper-container {
-        width: 100%;
-        overflow: hidden;
-      }
-
-      .swiper-slide {
-        width: auto; /* Ensures each image takes its natural width */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .slider {
-        overflow: hidden;
-        white-space: nowrap;
-        position: relative;
-        width: 100%;
-      }
-
-      .slide-track {
-        display: flex;
-        gap: 20px;
-        animation: slide 10s linear infinite;
-        width: calc(200px * 8); /* Adjust based on the number of images */
-      }
-
-      .slide-track img {
-        width: 200px; /* Adjust image width */
-        height: auto;
-      }
-
-      @keyframes slide {
-        0% {
-          transform: translateX(0);
-        }
-        100% {
-          transform: translateX(-50%);
-        }
-      }
-    </style>
     <!-- header content -->
     <header
       class="flex justify-between items-center px-4 py-2 fixed z-50 w-full bg-white"
@@ -79,30 +39,57 @@
         id="menu"
         class="hidden md:flex flex-col md:flex-row md:space-x-6 list-none absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0"
       >
-        <li class="py-2 px-4">
+        <li>
           <a
             href="index.html"
-            class="block items-center text-primary rounded-xl"
-            >Home</a
+            class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center"
           >
-          <img class="mx-auto" src="assets/images/Leaf.png" alt="" />
+            Home
+            <img
+              class="mt-1 hidden"
+              src="assets/images/Leaf.png"
+              alt="Leaf Icon"
+            />
+          </a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-xl"
-            >About Us</a
+          <a
+            href="about.html"
+            class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center"
           >
+            About Us
+            <img
+              class="mt-1 hidden"
+              src="assets/images/Leaf.png"
+              alt="Leaf Icon"
+            />
+          </a>
         </li>
         <li>
           <a
             href="product.html"
-            class="block py-2 px-4 hover:bg-gray-100 rounded-xl"
-            >Products</a
+            class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center"
           >
+            Products
+            <img
+              class="mt-1 hidden"
+              src="assets/images/Leaf.png"
+              alt="Leaf Icon"
+            />
+          </a>
         </li>
         <li>
-          <a href="#" class="block py-2 px-4 hover:bg-gray-100 rounded-xl"
-            >Contact</a
+          <a
+            href="contact.html"
+            class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center"
           >
+            Contact
+            <img
+              class="mt-1 hidden"
+              src="assets/images/Leaf.png"
+              alt="Leaf Icon"
+            />
+          </a>
         </li>
       </nav>
 
@@ -116,55 +103,69 @@
     <section class="pt-16">
       <!-- 1st section  start-->
       <div
-        class="relative w-full h-[500px] md:h-[804px] bg-cover bg-center p-24 bg-[url(assets/images/8a3ec4eca9e2e81de163dced80227ad6.jpeg)]"
+        class="w-full h-[500px] md:h-[804px] bg-cover bg-center p-4 lg:p-24 flex flex-col justify-center items-center"
+        style="
+          background-image: linear-gradient(to top, black, transparent),
+            url(assets/images/8a3ec4eca9e2e81de163dced80227ad6.jpeg);
+        "
       >
+        <!-- <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div> -->
         <div
-          class="absolute inset-0 bg-gradient-to-t from-black to-transparent"
-        ></div>
-        <div
-          class="font-manrope relative text-white text-center items-center font-bold text-3xl md:text-8xl md:mt-28 sm:text-5xl"
+          class="font-manrope text-white text-center items-center font-bold text-3xl lg:text-8xl md:mt-28 sm:text-5xl"
         >
           Transforming Wellness <br />
-          with Nature's Best.
+          With Nature's Best.
         </div>
       </div>
       <!-- 1st section end -->
       <!-- 2nd content start  -->
-      <div class="font-manrop text-xl mt-10 text-center md:text-4xl md:mt-40">
-        At Japonix LLC, we blend science and nature to craft premium <br />
-        dietary supplements, nutritional products, and food ingredients. <br />
-        Discover the essence of wellness in every product.
+      <div
+        class="font-manrop text-lg text-justify p-4 mt-10 md:text-center md:text-4xl xl:mt-40"
+      >
+        At Japonix LLC, we blend science and nature to craft premium dietary
+        supplements, nutritional products, and food ingredients. Discover the
+        essence of wellness in every product.
       </div>
-<h1 class="">Discover the essence of wellness in every product.</h1>
-      <div class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-5 font-medium ">
+
+      <div
+        class="lg:mt-20 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 font-medium p-2 text-sm lg:text-base"
+      >
         <a href="">
-        <div class=" mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]">
-          <img src="assets/images/Capa_1.png" alt="" />
-          Highest Quality <br />
-          Ingredients
-        </div>
-      </a>
+          <div
+            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
+          >
+            <img src="assets/images/Capa_1.png" alt="" />
+            Highest Quality <br />
+            Ingredients
+          </div>
+        </a>
         <a href="">
-        <div class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]">
-          <img src="assets/images/Capa_1 (1).png" alt="" />
-          Fuel your life with <br />
-          the purest vitamins
-        </div>
-      </a>
+          <div
+            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
+          >
+            <img src="assets/images/Capa_1 (1).png" alt="" />
+            Fuel your life with <br />
+            the purest vitamins
+          </div>
+        </a>
         <a href="">
-        <div class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px] ">
-          <img src="assets/images/Frame.png" alt="" />
-          World Class <br />
-          Supplements
-        </div>
-      </a>
+          <div
+            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
+          >
+            <img src="assets/images/Frame.png" alt="" />
+            World Class <br />
+            Supplements
+          </div>
+        </a>
         <a href="">
-        <div class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]">
-          <img src="assets/images/Frame (1).png" alt="" />
-          Most Bio-Available <br />
-          Nutrients
-        </div>
-      </a>
+          <div
+            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
+          >
+            <img src="assets/images/Frame (1).png" alt="" />
+            Most Bio-Available <br />
+            Nutrients
+          </div>
+        </a>
       </div>
       <!-- 2nd content end  -->
 
@@ -175,63 +176,116 @@
         Explore Our Best Products
         <img src="assets/images/Group 3.png" class="mx-auto" alt="" />
       </div>
-      <div class="justify-around text-center mt-3 md:mt-">
+      <div class="px-4 text-justify md:text-center md:text-lg mt-3 md:mt-">
         Our products are crafted to meet the highest standards of quality and
-        efficacy. From dietary supplements to specialized food <br />
-        ingredients, we deliver solutions that empower healthier lives.
+        efficacy. From dietary supplements to specialized food ingredients, we
+        deliver solutions that empower healthier lives.
       </div>
+
+      <!-- slider -->
       <a href="#">
         <div
-          class="swiper-container mt-10 h-16 p-6 bg-[#0032154D] bg-opacity-30"
+          class="swiper-container mt-10 py-2 px-4 bg-[#0032154D] bg-opacity-30 overflow-hidden"
         >
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="assets/images/Fit Fiber.png" alt="" />
+            <div
+              class="swiper-slide md:text-[40px] font-semibold min-w-fit text-darkgreen"
+            >
+              <div class="flex items-center">
+                Fit Fiber
+                <div class="px-4 max-w-2">
+                  <img src="assets/images/Leaf-icon.png" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/images/Gamma Oryzanol.png" alt="" />
+            <div
+              class="swiper-slide md:text-[40px] font-semibold min-w-fit text-darkgreen"
+            >
+              <div class="flex items-center">
+                Gamma Oryzanol
+                <div class="px-4 max-w-2">
+                  <img src="assets/images/Leaf-icon.png" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/images/D-Glucuronolactone.png" alt="" />
+            <div
+              class="swiper-slide md:text-[40px] font-semibold min-w-fit text-darkgreen"
+            >
+              <div class="flex items-center">
+                D-Glucuronolactone
+                <div class="px-4 max-w-2">
+                  <img src="assets/images/Leaf-icon.png" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/images/L+ Choline Bitartrate.png" alt="" />
+            <div
+              class="swiper-slide md:text-[40px] font-semibold min-w-fit text-darkgreen"
+            >
+              <div class="flex items-center">
+                L+ Choline Bitartrate
+                <div class="px-4 max-w-2">
+                  <img src="assets/images/Leaf-icon.png" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img src="assets/images/Yeast Protein F80.png" alt="" />
+            <div
+              class="swiper-slide md:text-[40px] font-semibold min-w-fit text-darkgreen"
+            >
+              <div class="flex items-center">
+                Yeast Protein F80
+                <div class="px-4 max-w-2">
+                  <img src="assets/images/Leaf-icon.png" alt="" />
+                </div>
+              </div>
             </div>
-            <div class="swiper-slide">
-              <img
-                src="assets/images/Yeast Protein F84 Powder (1).png"
-                alt=""
-              />
+            <div
+              class="swiper-slide md:text-[40px] font-semibold min-w-fit text-darkgreen"
+            >
+              <div class="flex items-center">
+                Yeast Protein F84 Powder
+                <div class="px-4 max-w-2">
+                  <img src="assets/images/Leaf-icon.png" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </a>
 
-      <div class="w-full md:w-[79%] mx-auto my-20">
-        <a href="#">
-          <img src="assets/images/Group 3 1.png" alt="" />
-        </a>
+      <!-- banner -->
+      <div class="w-full mx-auto my-10 lg:my-20 px-4">
+        <div class="bg-darkgreen rounded-3xl">
+          <div class="flex flex-wrap items-center p-8 justify-between">
+            <div
+              class="text-accentyellow font-bold md:text-3xl lg:text-5xl text-2xl w-full sm:w-1/2 p-4"
+            >
+              Competitive pricing with professional service.
+            </div>
+            <div class="w-full sm:w-1/2 p-8">
+              <img
+                src="assets/images/green-bannergraphic.png"
+                alt=""
+                class="mx-auto"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- 3rd content end  -->
       <!-- 4th content start  -->
 
-      <div class="mt-10 items-center md:justify-around md:flex">
-        <div class="mb-10 p-6">
+      <div class="lg:mt-10 items-center md:justify-around md:flex">
+        <div class="md:mb-10 px-4 md:w-2/5 xl:w-1/3">
           <h1 class="text-2xl font-bold md:text-3xl">
             Chosen by working <br />
             professionals
           </h1>
-          <p class="mt-5">
-            every supplement and nutritional product is rigorously tested and
-            approved <br />
-            by industry professionals. Backed by science and trusted by experts,
-            our <br />
-            products ensure quality, safety, and effectiveness for your
-            well-being.
+          <p class="mt-5 text-justify">
+            Every supplement and nutritional product is rigorously tested and
+            approved by industry professionals. Backed by science and trusted by
+            experts, our products ensure quality, safety, and effectiveness for
+            your well-being.
           </p>
         </div>
         <img
@@ -241,22 +295,22 @@
         />
       </div>
 
-      <div class="relative mt-10 md:w-full justify-center">
-        <img
-          src="assets/images/pills-table-glucosamine-selective-focus 1.jpeg"
-          alt=""
-        />
-        <img
-          src="assets/images/“When you choose Beyond Health, you’re investing in high-quality, bioavailable ingredients.png"
-          alt=""
-          class="absolute top-[35%] lg:left-[7%] xl:left-[15%]"
-        />
-        <br />
-        <button
-          class="absolute top-[70%] md:top-[68%] text-[70%] lg:text-xl left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#20AD5A] text-white px-2 md:px-7 hover:bg-[#187a41] py-1 md:py-3 rounded-full"
+      <div
+        class="py-40 flex flex-col items-center gap-3 mt-10 md:w-full justify-center bg-cover bg-[url(assets/images/pills-table-glucosamine-selective-focus.jpeg)] mb-10 px-4"
+      >
+        <div
+          class="text-primary text-xl md:text-4xl text-center  md:w-[60vw] font-medium"
         >
-          CONTACT US
-        </button>
+          “When you choose Beyond Health, you’re investing in high-quality,
+          bioavailable ingredients"
+        </div>
+        <a href="contact.html">
+          <button
+            class="text-[70%] lg:text-xl bg-green-700 text-white px-2 md:px-7 hover:bg-[#187a41] py-1 md:py-3 rounded-full w-1/3 md:w-1/5 font-medium min-w-fit"
+          >
+            CONTACT US
+          </button>
+        </a>
       </div>
       <!-- 4th content end  -->
       <!-- 5th content start  -->
@@ -367,29 +421,39 @@
         <div class="mt-10 mx-5 flex justify-center">
           <div>
             <div class="flex">
-              <img class="p-5" src="assets/images/icons8_marker 1.png" alt="" />
+              <div class="div">
+                <img
+                  class="p-5"
+                  src="assets/images/icons8_marker 1.png"
+                  alt=""
+                />
+              </div>
               <div class="flex flex-col justify-center">
                 <p>Send your queries</p>
                 <a href="#">info@japonix.com</a>
               </div>
             </div>
             <div class="flex">
-              <img
-                class="p-5"
-                src="assets/images/icons8_marker 1 (1).png"
-                alt=""
-              />
+              <div class="div">
+                <img
+                  class="p-5"
+                  src="assets/images/icons8_marker 1 (1).png"
+                  alt=""
+                />
+              </div>
               <div class="flex flex-col justify-center">
                 <p>Get In Contact</p>
                 +17167445110
               </div>
             </div>
             <div class="flex py-2">
-              <img
-                class="p-5"
-                src="assets/images/icons8_marker 1 (2).png"
-                alt=""
-              />
+              <div class="div">
+                <img
+                  class="p-5"
+                  src="assets/images/icons8_marker 1 (2).png"
+                  alt=""
+                />
+              </div>
               <div class="flex flex-col justify-center">
                 <p>Visit Us</p>
                 <a href="#"
@@ -415,7 +479,7 @@
             Follow Us On
           </p>
 
-          <div class="flex">
+          <div class="flex gap-4">
             <a href="#"
               ><img
                 class="p-2"
@@ -449,17 +513,31 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
       var swiper = new Swiper(".swiper-container", {
-        slidesPerView: "auto",
-        spaceBetween: 20,
+        slidesPerView: "4",
+
         loop: true,
         autoplay: {
           delay: 1, // Minimized delay for continuous scrolling
           disableOnInteraction: false,
         },
-        speed: 3000, // Controls the speed of the scroll
+        speed: 6000, // Controls the speed of the scroll
         allowTouchMove: false, // Disables manual dragging
         freeMode: true, // Allows continuous movement without snapping
       });
     </script>
+    <script>
+      // Get the leaf icon element
+      const leafIcon = document.getElementById("leafIcon");
+
+      // Check if we're on the home page
+      if (
+        window.location.pathname === "/index.html" ||
+        window.location.pathname === "/"
+      ) {
+        leafIcon.classList.replace("opacity-0", "opacity-100");
+      }
+    </script>
+    <!-- nav-highlight -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
