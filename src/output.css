@@ -1119,6 +1119,9 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .\[c\:\*\1 E��d�Z�4�FI���\18 \13 Ci23vr�\%\1e �z\/Օ�S0�\7 \12 �\!��E\?YW�\*4\\n�dAL�\{��\6 ��\!I���I\2 ށks�jZ��\:P\1a \}�D�_\<�׫X���s\'V�\{������\,\\\b 6��\f ��\@�feC��l4\1d �ɒ\10 ��f��\,�VS�Gn�\&�\*G̟��\17 q�E����\]\/���H��R\'�\*a\)kܧ�\$��\7 �ɽw�����O�\}v��蛙�M\1b ə\11 u\10 �\f \3 �\:\8 �ժG����\*�\?�g��W��Ē�����Oc\15 �\] {
+    c: *E��d�Z�4�FI���Ci23vr�%�z/Օ�S0� !��E?YW�*4\n�dAL�{����!I���Iށks�jZ��:P}�D� <�׫X���s'V�{������,\6����@�feC��l4�ɒ��f��,�VS�Gn�&�*G̟��q�E����]/���H��R'�*a)kܧ�$���ɽw�����O�}v��蛙�Məu��:�ժG����*�?�g��W��Ē�����Oc�;
+  }
   .hover\:bg-\[\#3b7654\] {
     &:hover {
       @media (hover: hover) {
@@ -1506,147 +1509,6 @@
   initial-value: 0;
 }
 @property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
-@property --tw-font-weight {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-inset-ring-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-inset-ring-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-ring-inset {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-ring-offset-width {
-  syntax: "<length>";
-  inherits: false;
-  initial-value: 0px;
-}
-@property --tw-ring-offset-color {
-  syntax: "*";
-  inherits: false;
-  initial-value: #fff;
-}
-@property --tw-ring-offset-shadow {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0 0 #0000;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-space-x-reverse {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-otate-x {
   syntax: "*";
   inherits: false;
   initial-value: rotateX(0);
