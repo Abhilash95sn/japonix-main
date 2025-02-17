@@ -930,8 +930,23 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-\[url\(\'\/src\/assets\/images\/pills-table-glucosamine-selective-focus\.jpeg\'\)\] {
+    background-image: url('/src/assets/images/pills-table-glucosamine-selective-focus.jpeg');
+  }
+  .bg-\[url\(\'assets\/images\/8a3ec4eca9e2e81de163dced80227ad6\.jpeg\'\)\] {
+    background-image: url('assets/images/8a3ec4eca9e2e81de163dced80227ad6.jpeg');
+  }
+  .bg-\[url\(\/src\/assets\/images\/pills-table-glucosamine-selective-focus\.jpeg\)\] {
+    background-image: url(/src/assets/images/pills-table-glucosamine-selective-focus.jpeg);
+  }
+  .bg-\[url\(assets\/images\/8a3ec4eca9e2e81de163dced80227ad6\.jpeg\)\] {
+    background-image: url(assets/images/8a3ec4eca9e2e81de163dced80227ad6.jpeg);
+  }
   .bg-\[url\(assets\/images\/pills-table-glucosamine-selective-focus\.jpeg\)\] {
     background-image: url(assets/images/pills-table-glucosamine-selective-focus.jpeg);
+  }
+  .bg-\[url\(src\/assets\/images\/pills-table-glucosamine-selective-focus\.jpeg\)\] {
+    background-image: url(src/assets/images/pills-table-glucosamine-selective-focus.jpeg);
   }
   .from-black {
     --tw-gradient-from: var(--color-black);
@@ -1082,8 +1097,14 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[\#1acd17\] {
+    color: #1acd17;
+  }
   .text-\[\#003215\] {
     color: #003215;
+  }
+  .text-\[\#FFCE51\] {
+    color: #FFCE51;
   }
   .text-amber-50 {
     color: var(--color-amber-50);
@@ -1136,6 +1157,16 @@
   }
   .\[c\:\*\1 E��d�Z�4�FI���\18 \13 Ci23vr�\%\1e �z\/Օ�S0�\7 \12 �\!��E\?YW�\*4\\n�dAL�\{��\6 ��\!I���I\2 ށks�jZ��\:P\1a \}�D�_\<�׫X���s\'V�\{������\,\\\b 6��\f ��\@�feC��l4\1d �ɒ\10 ��f��\,�VS�Gn�\&�\*G̟��\17 q�E����\]\/���H��R\'�\*a\)kܧ�\$��\7 �ɽw�����O�\}v��蛙�M\1b ə\11 u\10 �\f \3 �\:\8 �ժG����\*�\?�g��W��Ē�����Oc\15 �\] {
     c: *E��d�Z�4�FI���Ci23vr�%�z/Օ�S0� !��E?YW�*4\n�dAL�{����!I���Iށks�jZ��:P}�D� <�׫X���s'V�{������,\6����@�feC��l4�ɒ��f��,�VS�Gn�&�*G̟��q�E����]/���H��R'�*a)kܧ�$���ɽw�����O�}v��蛙�Məu��:�ժG����*�?�g��W��Ē�����Oc�;
+  }
+  .visited\:block {
+    &:visited {
+      display: block;
+    }
+  }
+  .visited\:flex {
+    &:visited {
+      display: flex;
+    }
   }
   .hover\:bg-\[\#3b7654\] {
     &:hover {
@@ -1193,6 +1224,11 @@
   .sm\:grid-cols-4 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .sm\:grid-cols-6 {
+    @media (width >= 40rem) {
+      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
   .sm\:text-5xl {
@@ -1417,9 +1453,24 @@
       box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
+  .lg\:left-\[\%\] {
+    @media (width >= 64rem) {
+      left: %;
+    }
+  }
   .lg\:left-\[7\%\] {
     @media (width >= 64rem) {
       left: 7%;
+    }
+  }
+  .lg\:left-\[17\%\] {
+    @media (width >= 64rem) {
+      left: 17%;
+    }
+  }
+  .lg\:left-\[20\%\] {
+    @media (width >= 64rem) {
+      left: 20%;
     }
   }
   .lg\:my-20 {
@@ -1466,9 +1517,19 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .xl\:left-\[5\%\] {
+    @media (width >= 80rem) {
+      left: 5%;
+    }
+  }
   .xl\:left-\[15\%\] {
     @media (width >= 80rem) {
       left: 15%;
+    }
+  }
+  .xl\:left-\[35\%\] {
+    @media (width >= 80rem) {
+      left: 35%;
     }
   }
   .xl\:mt-40 {
