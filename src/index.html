@@ -27,16 +27,28 @@
     >
       <div class="flex justify-center items-center gap-3">
         <button
-          onclick="document.getElementById('menu').classList.toggle('hidden')"
-          class="md:hidden text-2xl flex justify-center items-center size-6"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-            <path
-              d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
-            />
-          </svg>
-        </button>
+        id="menu-toggle"
+        onclick="toggleMenu()"
+        class="md:hidden text-2xl flex justify-center items-center size-6"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+          <path
+            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+      </button>
+  
+      <!-- Close Button (Initially Hidden) -->
+      <button
+        id="menu-close"
+        onclick="toggleMenu()"
+        class="md:hidden text-2xl flex justify-center items-center size-6 hidden"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
+  
         <div>
           <img src="assets/images/logo (2).png" alt="Logo" class="p-2" />
         </div>
@@ -138,37 +150,34 @@
       <div
         class="lg:mt-20 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-5 font-medium p-2 text-sm lg:text-base"
       >
-        <a href="">
+     
+        <a href="#">
           <div
-            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
-          >
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
             <img src="assets/images/Capa_1.png" alt="" />
             Highest Quality <br />
             Ingredients
           </div>
         </a>
-        <a href="">
+        <a href="#">
           <div
-            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
-          >
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
             <img src="assets/images/Capa_1 (1).png" alt="" />
             Fuel your life with <br />
             the purest vitamins
           </div>
         </a>
-        <a href="">
+        <a href="#">
           <div
-            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
-          >
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
             <img src="assets/images/Frame.png" alt="" />
             World Class <br />
             Supplements
           </div>
         </a>
-        <a href="">
+        <a href="#">
           <div
-            class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] w-[152px]"
-          >
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
             <img src="assets/images/Frame (1).png" alt="" />
             Most Bio-Available <br />
             Nutrients
@@ -334,7 +343,7 @@
           vestibulum faucibus et pulvinar quam.
         </p>
       </div>
-      <div class="md:flex md:justify-around">
+      <div class=" mt-10 md:flex md:justify-around">
         <div>
           <div class="md:flex md:mt-10">
             <div class="mb-4 px-5">
@@ -547,5 +556,12 @@
     </script>
     <!-- nav-highlight -->
     <script src="./js/main.js"></script>
+    <script>
+      function toggleMenu() {
+        document.getElementById('menu').classList.toggle('hidden');
+        document.getElementById('menu-toggle').classList.toggle('hidden');
+        document.getElementById('menu-close').classList.toggle('hidden');
+      }
+    </script>
   </body>
 </html>
