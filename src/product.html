@@ -77,16 +77,33 @@
   <!-- header content -->
   <header class="flex justify-between items-center px-4 py-2  fixed z-50 w-full bg-white">
     <div class="flex justify-center items-center gap-3">
-      <button onclick="document.getElementById('menu').classList.toggle('hidden')"
-        class="md:hidden text-2xl flex justify-center items-center size-6">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
-          <path
-            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
-        </svg>
-      </button>
+      <button
+      id="menu-toggle"
+      onclick="toggleMenu()"
+      class="md:hidden text-2xl flex justify-center items-center size-6"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+          d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"
+        />
+      </svg>
+    </button>
+
+    <!-- Close Button (Initially Hidden) -->
+    <button
+      id="menu-close"
+      onclick="toggleMenu()"
+      class="md:hidden text-2xl flex justify-center items-center size-6 hidden"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+    </button>
+
       <div>
+        <a href="index.html">
         <img src="assets/images/logo (2).png" alt="Logo" class="p-2" />
+      </a>
       </div>
     </div>
     <nav id="menu"
@@ -152,12 +169,12 @@
       Explore Our Best Products
       <img src="assets/images/Group 3.png" class="mx-auto" alt="">
     </div>
-    <div class=" justify-around text-center mt-3 md:mt-">
+    <div class=" justify-around text-center mt-3 ">
       Our products are crafted to meet the highest standards of quality and
       efficacy. From dietary supplements to specialized food <br />
       ingredients, we deliver solutions that empower healthier lives.
     </div>
-    <div class=" mt-20 px-4 grid grid-cols-2 md:grid-cols-6 gap-10 font-medium ">
+    <div class=" mt-20  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 px-4 gap-10 font-medium ">
       
       <a href="fit-fiber.html">
         <div
@@ -181,13 +198,7 @@
           D-Glucuronolactone
         </div>
       </a>
-      <a href="L+ Choline Bitartrate.html">
-        <div
-          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
-          <img src="assets/images/Frame.png" class=" pt-1 pb-4" alt="" />
-          L+ Choline Bitartrate
-        </div>
-      </a>
+    
       <a href="Yeast Protein F80.html">
         <div
           class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
@@ -202,7 +213,27 @@
           Yeast Protein F84 Powder
         </div>
       </a>
-
+        <a href="L+ Choline Bitartrate.html">
+        <div
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
+          <img src="assets/images/Frame.png" class=" pt-1 pb-4" alt="" />
+          FitCrystal Curcumin
+        </div>
+      </a>
+  <a href="L+ Choline Bitartrate.html">
+        <div
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
+          <img src="assets/images/Frame.png" class=" pt-1 pb-4" alt="" />
+          FitCrystal Lutein
+        </div>
+      </a>
+        <a href="L+ Choline Bitartrate.html">
+        <div
+          class="mx-auto text-center flex items-center flex-col gap-2 border-2 py-2 border-dashed border-[#20AD5A] justify-evenly  size-[180px]">
+          <img src="assets/images/Frame.png" class=" pt-1 pb-4" alt="" />
+          FitCrystal Vitamin E
+        </div>
+      </a>
     </div>
 
     <!-- <a href="#">
@@ -363,8 +394,7 @@
             <img class=" p-5" src="assets/images/icons8_marker 1 (2).png" alt="" />
             <div class="flex flex-col justify-center">
               <p>Visit Us</p>
-              <a href="#">01 East Benton Place, Chicago,<br>
-                Cook County, Illinois, 60601</a>
+              <a href="#">1000 Brookside Dr, <br> Fairfield CT 06824, USA</a>
             </div>
           </div>
         </div>
@@ -378,15 +408,35 @@
 
   <footer class="bg-[#003215] p-5 mt-32 ">
     <div class="bg-[#003215] p-5 flex flex-col items-center md:flex-row justify-between">
-      <img class="w-32 p-2 mb-5 " src="assets/images/Group 2 (1).png" alt="">
-      <div class=" p-2">
-        <p class="text-white text-center md:text-justify md:pl-2">Follow Us On</p>
+      <a href="index.html">
 
-        <div class="flex">
-          <a href="#"><img class="p-2" src="publicassets/images/icons8_facebook 1.png" alt=""></a>
-          <a href="#"><img class="p-2" src="publicassets/images/icons8_instagram 1.png" alt=""></a>
-          <a href="#"><img class="p-2" src="publicassets/images/x.png" alt=""></a>
-          <a href="#"><img class="p-2" src="publicassets/images/icons8_linkedin 1.png" alt=""></a>
+        <img class="w-32 p-2 mb-5 " src="assets/images/Group 2 (1).png" alt="">
+      </a>
+      <div class="p-2">
+        <p class="text-white text-center md:text-justify md:pl-2">
+          Follow Us On
+        </p>
+
+        <div class="flex gap-4">
+          <a href="#"
+            ><img
+              class="p-2"
+              src="assets/images/icons8_facebook 1.png"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              class="p-2"
+              src="assets/images/icons8_instagram 1.png"
+              alt=""
+          /></a>
+          <a href="#"><img class="p-2" src="assets/images/x.png" alt="" /></a>
+          <a href="#"
+            ><img
+              class="p-2"
+              src="assets/images/icons8_linkedin 1.png"
+              alt=""
+          /></a>
         </div>
       </div>
     </div>
@@ -412,6 +462,13 @@
   </script>
   <!-- nav-highlight -->
   <script src="./js/main.js"></script>
+  <script>
+    function toggleMenu() {
+      document.getElementById('menu').classList.toggle('hidden');
+      document.getElementById('menu-toggle').classList.toggle('hidden');
+      document.getElementById('menu-close').classList.toggle('hidden');
+    }
+  </script>
 </body>
 
 </html>

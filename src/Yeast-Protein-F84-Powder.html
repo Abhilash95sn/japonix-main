@@ -1,159 +1,721 @@
-<html>
- <head>
-  <title>
-   Product Specification
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
- </head>
- <body class="p-8">
-  <div class="max-w-4xl mx-auto">
- 
-   <h1 class="text-center text-2xl font-bold mb-4">
-    PRODUCT SPECIFICATION
-   </h1>
-   <div class="mb-4">
-    <p>
-     <strong>
-      Product Name:
-     </strong>
-     D-Glucuronolactone
-    </p>
-    <p>
-     <strong>
-      Executive Standard:
-     </strong>
-     Internal Standard
-    </p>
-    <p>
-     <strong>
-      Shelf Life:
-     </strong>
-     24 months
-    </p>
-    <p>
-     <strong>
-      Date:
-     </strong>
-     September 14, 2024
-    </p>
-   </div>
-   <table class="w-full border-collapse border border-black">
-    <thead>
-     <tr>
-      <th class="border border-black p-2">
-       Item
-      </th>
-      <th class="border border-black p-2">
-       Test Method
-      </th>
-      <th class="border border-black p-2">
-       Specification
-      </th>
-     </tr>
-    </thead>
-    <tbody>
-     <tr>
-      <td class="border border-black p-2">
-       Appearance
-      </td>
-      <td class="border border-black p-2">
-       Organoleptic
-      </td>
-      <td class="border border-black p-2">
-       White crystal or crystalline powder, odorless, slightly bitter, soluble in water
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Identification
-      </td>
-      <td class="border border-black p-2">
-       HPLC
-      </td>
-      <td class="border border-black p-2">
-       Under assay test item, the retention time of the main peak of the tested sample solution should be consistent with that of the reference solution
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Specific Optical Rotation, °
-      </td>
-      <td class="border border-black p-2">
-       General Rule 0621
-      </td>
-      <td class="border border-black p-2">
-       +18.0 ~ +20.0
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Melting Point, °C
-      </td>
-      <td class="border border-black p-2">
-       General Rule 0612
-      </td>
-      <td class="border border-black p-2">
-       170 ~ 176, simultaneous decomposition during melting
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Clarity and color of the solution
-      </td>
-      <td class="border border-black p-2">
-       General Rule 0902
-      </td>
-      <td class="border border-black p-2">
-       The solution should be clear and colorless
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Loss On Drying, %
-      </td>
-      <td class="border border-black p-2">
-       GB 5009.3
-      </td>
-      <td class="border border-black p-2">
-       ≤ 0.5
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Residue On Ignition, %
-      </td>
-      <td class="border border-black p-2">
-       GB 5009.4
-      </td>
-      <td class="border border-black p-2">
-       ≤ 0.1
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Heavy Metals, ppm
-      </td>
-      <td class="border border-black p-2">
-       General Rule 0821
-      </td>
-      <td class="border border-black p-2">
-       ≤ 10
-      </td>
-     </tr>
-     <tr>
-      <td class="border border-black p-2">
-       Assay (Dry basis), %
-      </td>
-      <td class="border border-black p-2">
-       General Rule 0512
-      </td>
-      <td class="border border-black p-2">
-       98.5 ~ 102.0
-      </td>
-     </tr>
-    </tbody>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yeast-Protein-F84-Powder</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="src/style.css"> -->
+</head>
+
+<body class="m-auto">
+    <!-- header content -->
+    <header class="flex justify-between items-center px-4 py-2 fixed z-50 w-full bg-white">
+        <div class="flex justify-center items-center gap-3">
+            <button onclick="document.getElementById('menu').classList.toggle('hidden')"
+                class="md:hidden text-2xl flex justify-center items-center size-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+            <div>
+                <a href="index.html">
+                <img src="assets/images/logo (2).png" alt="Logo" class="p-2" />
+              </a>
+              </div>
+        </div>
+        <nav id="menu"
+            class="hidden md:flex flex-col md:flex-row md:space-x-6 list-none absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0">
+            <li>
+                <a href="index.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    Home
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    About Us
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+            <li>
+                <a href="product.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    Products
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+            <li>
+                <a href="product.html#contact" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    Contact
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+        </nav>
+        <a href="product.html#contact">
+            <button
+              class="bg-[#003215] text-white text-xs px-4 py-2 rounded-full hover:bg-[#004315]"
+            >
+              CONTACT US
+            </button>
+          </a>
+    </header>
+    <!-- section content -->
+    <section class="pt-28">
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-20">
+
+               <h1 class="text-2xl font-bold text-center text-green-600"><span class="text-red-500">Y</span>east Protein <span class="text-red-500">F</span>84 Powder</h1>
+                <h1 class="text-center text-xl font-bold ">
+                 TECHNICAL DATA SHEET
+                </h1>
+                <div class="mt-8">
+                 <p class="text-lg font-bold">
+                  Product Name: Yeast Protein F84
+                  
+                   Powder
+                  
+                 </p>
+                </div>
+                <div class="mt-4">
+                 <p class="font-bold">
+                  Product range
+                 </p>
+                 <p>
+                  AngeoPro
+                 </p>
+                </div>
+                <div class="mt-4">
+                 <p class="font-bold">
+                  Description
+                 </p>
+                 <p>
+                  This product is produced from food grade baker's yeast cells of the species
+                  <i>
+                   Saccharomyces cereviseae
+                  </i>
+                  . Yeast Protein 84 range is a natural-origin yeast protein that is animal-free and allergen-free. The high protein content of Yeast Protein 84 range is derived from the eco- <br> friendly <br> fermentation process. Yeast Protein 84 range is an innovative protein source for plant-based foods and contributes to taste enhancement, nutrition-boosting, and off-notes masking.
+                 </p>
+                </div>
+                <div class="mt-4">
+                 <p class="font-bold">
+                  Ingredients Composition
+                 </p>
+                 <p>
+                  Yeast protein.
+                 </p>
+                </div>
+                <div class="mt-4">
+                 <p class="font-bold">
+                  Recommended Declaration
+                 </p>
+                 <p>
+                  Yeast protein.
+                 </p>
+                </div>
+                <h1 class="text-xl font-bold mb-4">Product Suitability</h1>
+                <ul class="list-none mb-8">
+                    <li>Food-grade</li>
+                    <li>GMO-free</li>
+                    <li>Animal-free</li>
+                </ul>
+                
+                <h1 class="text-xl font-bold mb-4">Dietary Information</h1>
+               
+               <div class="flex">
+                <ul class="list-none mb-8">
+                    <li>Halal suitable: </li>
+                    <li>Kosher suitable: </li>
+                    <li>Vegan suitable: </li>
+                </ul>
+                <ul class="pl-10">
+                    <li><span class="font-normal">Yes</span></li>
+                    <li><span class="font-normal">Yes, Kosher Pareve.</span></li>
+                    <li><span class="font-normal">Yes, this product contains no ingredients of animal origin.</span></li>
+                </ul>
+               </div> 
+                
+                <h1 class="text-xl font-bold mb-4">Packaging, Shelf-life and Storage condition</h1>
+               
+               <div class="flex">
+                <ul class="list-none pr-5">
+                    <li>Packaging: </li>
+                    <li>Shelf-life: </li>
+                    <li>Storage condition: </li>
+                </ul>
+                <ul class="">
+<li>25kg/bag, multi walled paper bags with polyethylene liner.</li>
+<li>24 months after date of production, kept in the proper condition.</li>
+<li>Store cool, dry and protect product from direct sunlight. Keep packaging closed when not in use.</li>
+                </ul>
+               </div> 
+             
+
+
+
+                <div class="border-t-2 border-black mt-10">
+                
+   <h2 class="text-xl font-bold mb-4 pt-20">
+    Physical Characteristics
+   </h2>
+   <table class="w-full mb-8 border-collapse border border-gray-400">
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Appearance
+     </td>
+     <td class="border border-gray-400 p-2">
+      Uniform powder.
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Texture
+     </td>
+     <td class="border border-gray-400 p-2">
+      Free flowing without lumps.
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Color
+     </td>
+     <td class="border border-gray-400 p-2">
+      Yellow.
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Odor/Taste
+     </td>
+     <td class="border border-gray-400 p-2">
+      Characteristic of yeast protein, free from foreign and off odors/taste.
+     </td>
+    </tr>
    </table>
+   <div class="flex justify-between">
+    <h2 class=" text-xl font-bold mb-4">
+        Chemical Characteristics
+       </h2>
+       <h2 class="text-xl font-bold mb-4">
+        Microbiological Characteristics
+       </h2>
+   </div>
+  
+   <table class="w-full mb-8 border-collapse border border-gray-400">
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Crude protein (dry matter)
+     </td>
+     <td class="border border-gray-400 p-2">
+      ≥75.0%
+     </td>
+     <td class="border border-gray-400 p-2">
+      Total plate count
+     </td>
+     <td class="border border-gray-400 p-2">
+      ≤5000CFU/g
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Moisture
+     </td>
+     <td class="border border-gray-400 p-2">
+      ≤5.0%
+     </td>
+     <td class="border border-gray-400 p-2">
+      Coliforms
+     </td>
+     <td class="border border-gray-400 p-2">
+      ≤10CFU/g
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Lead
+     </td>
+     <td class="border border-gray-400 p-2">
+      ≤1.0mg/kg
+     </td>
+     <td class="border border-gray-400 p-2">
+      Salmonella
+     </td>
+     <td class="border border-gray-400 p-2">
+      Negative/25g
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Arsenic
+     </td>
+     <td class="border border-gray-400 p-2">
+      ≤1.0mg/kg
+     </td>
+     <td class="border border-gray-400 p-2">
+      Staphylococcus aureus
+     </td>
+     <td class="border border-gray-400 p-2">
+      Negative/25g
+     </td>
+    </tr>
+   </table>
+   <h2 class="text-xl font-bold mb-4">
+    Nutritional Information*
+   </h2>
+   <table class="w-full border-collapse border border-gray-400">
+    <tr>
+     <th class="border border-gray-400 bg-gray-200 p-2 w-48">
+      Items
+     </th>
+     <th class="border border-gray-400 bg-gray-200 p-2" colspan="2">
+      Per 100g
+     </th>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Energy
+     </td>
+     <td class="border border-gray-400 p-2 text-center">
+      1793kJ
+     </td>
+     <td class="border border-gray-400 p-2 text-center">
+      428kcal
+     </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Protein
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      79.3
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Total fat
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      9.0
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      ── Saturated fat
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      0
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      ── Trans-fat
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      0
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      ── Cholesterol
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      0
+     </td>
+     <td class="border border-gray-400 p-2">
+    mg
+       </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      Total carbohydrates
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      6.6
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      ── Naturally sugars
+     </td>
+     <td class="border border-gray-400 p-2 text-right" >
+      0.6
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+    </tr>
+    <tr>
+     <td class="border border-gray-400 p-2">
+      ── Added sugars
+     </td>
+     <td class="border border-gray-400 p-2 text-right">
+      0
+     </td>
+     <td class="border border-gray-400 p-2">
+        g
+       </td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">  ── Dietary fiber</td>
+        <td class="border border-black px-4 py-2 text-right">5.5</td>
+        <td class="border border-black px-4 py-2">g</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Vitamin A</td>
+        <td class="border border-black px-4 py-2 text-right">0</td>
+        <td class="border border-black px-4 py-2">mg</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Vitamin C</td>
+        <td class="border border-black px-4 py-2 text-right">0</td>
+        <td class="border border-black px-4 py-2">mg</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Vitamin D</td>
+        <td class="border border-black px-4 py-2 text-right">0</td>
+        <td class="border border-black px-4 py-2">ug</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Sodium</td>
+        <td class="border border-black px-4 py-2 text-right">109</td>
+        <td class="border border-black px-4 py-2">mg</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Potassium</td>
+        <td class="border border-black px-4 py-2 text-right">38</td>
+        <td class="border border-black px-4 py-2">mg</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Iron</td>
+        <td class="border border-black px-4 py-2 text-right">8</td>
+        <td class="border border-black px-4 py-2">mg</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Calcium</td>
+        <td class="border border-black px-4 py-2 text-right">12</td>
+        <td class="border border-black px-4 py-2">mg</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Moisture</td>
+        <td class="border border-black px-4 py-2 text-right">2.0</td>
+        <td class="border border-black px-4 py-2">g</td>
+    </tr>
+    <tr>
+        <td class="border border-black px-4 py-2">Ash</td>
+        <td class="border border-black px-4 py-2 text-right">3.1</td>
+        <td class="border border-black px-4 py-2">g</td>
+    </tr>
+
+
+
+
+
+   </table>
+   <i class="mt-2 text-sm">*Typical values for indication purpose.</i>
+
+
+
+   <div class="max-w-4xl mx-auto border-t-2 border-black mt-10">
+   
+    <h1 class="text-2xl font-bold mb-4 pt-24">
+     Allergen Information
+    </h1>
+    <table class="w-full border-collapse border border-black">
+     <thead>
+      <tr>
+       <th class="border border-black bg-gray-200 px-4 py-2 text-left">
+        Items
+       </th>
+       <th class="border border-black bg-gray-200 px-4 py-2 text-left">
+        Status
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        1. Cereals containing gluten* (i.e., wheat, rye, barley, oats, spelt, kamut or their hybridised strains) and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No*
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        2. Crustaceans and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        3. Eggs and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        4. Fish and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        5. Peanuts and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        6. Soybeans and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        7. Milk and products thereof (including lactose);
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        8. Nuts, i.e., almonds (Amygdalus communis L.), hazelnuts (Corylus avellana), walnuts (Juglans regia), cashews (Anacardium occidentale), pecan nuts (Carya illinoiesis (Wangenh.) K. Koch), Brazil nuts (Bertholletia excelsa), pistachio nuts (Pistacia vera), macadamia nuts and Queensland nuts (Macadamia ternifolia), and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        9. Celery and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        10. Mustard and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        11. Sesame seeds and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        12. Added sulfur dioxide and sulfites;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        13. Lupin and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+      <tr>
+       <td class="border border-black px-4 py-2">
+        14. Mollusks and products thereof;
+       </td>
+       <td class="border border-black px-4 py-2">
+        No
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <i class="mt-4 text-sm">
+     *Gluten free according to the Regulation (EU) No 828/2014 (&lt;20ppm).
+    </i>
+    <div class="pt-20 text-black text-lg font-sans">
+        <p>The information contained in this data sheet is accurate to the best of our knowledge at the indicated date and remains our property.</p>
+        <p>It is the user’s responsibility to ensure that the conditions and possible uses of the product conform to current laws and regulations.</p>
+    </div>
+   </div>
   </div>
- </body>
+
+
+                </div>
+
+               </div>
+
+               
+            </div>
+
+            <!-- 5th content start  -->
+
+            <div>
+                <h1 class="font-manrope font-bold text-center md:text-3xl">
+                    Contact Our Team
+                </h1>
+                <p class="text-center md:mt-10">
+                    Lorem ipsum dolor sit amet consectetur. Amet cras molestie consequat
+                    morbi. Dapibus id urna consequat morbi orci eget. Diam <br />
+                    aliquam ultrices aliquam enim justo aliquet. Lectus aliquam tellus
+                    vestibulum faucibus et pulvinar quam.
+                </p>
+            </div>
+            <div class="md:flex md:justify-around">
+                <div>
+                    <div class="md:flex md:mt-10">
+                        <div class="mb-4 px-5">
+                            <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name"
+                                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                        </div>
+                        <div class="mb-4 px-5">
+                            <label for="last name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text" id="last name" name="last name" placeholder="Last Name"
+                                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                        </div>
+                    </div>
+
+                    <div class="mb-4 px-5">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="text" id="email" name="email" placeholder="You@company.com"
+                            class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                    </div>
+                    <div class="mb-4 px-5">
+                        <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <div class="mt-1 flex">
+                            <select id="country-code" name="country-code"
+                                class="block w-20 rounded-l-md border border-[#0000002] bg-gray-100 p-2 focus:border-blue-500 focus:ring-blue-500">
+                                <option value="+91">IND</option>
+                                <option value="+1">USA</option>
+                                <option value="+44">UK</option>
+                                <option value="+61">Australia</option>
+                                <option value="+81">Japan</option>
+                            </select>
+                            <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number"
+                                class="block w-full rounded-r-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+                                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"></textarea>
+                        </div>
+                        <button class="bg-[#003215] text-white w-full rounded-2xl py-2 hover:bg-[#3b7654]">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-10 mx-5 flex justify-center">
+                    <div>
+                        <div class="flex">
+                            <img class="p-5" src="assets/images/icons8_marker 1.png" alt="" />
+                            <div class="flex flex-col justify-center">
+                                <p>Send your queries</p>
+                                <a href="#">info@japonix.com</a>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img class="p-5" src="assets/images/icons8_marker 1 (1).png" alt="" />
+                            <div class="flex flex-col justify-center">
+                                <p>Get In Contact</p>
+                                +17167445110
+                            </div>
+                        </div>
+                        <div class="flex py-2">
+                            <img class="p-5" src="assets/images/icons8_marker 1 (2).png" alt="" />
+                            <div class="flex flex-col justify-center">
+                                <p>Visit Us</p>
+                                <a href="#">1000 Brookside Dr, <br> Fairfield CT 06824, USA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th content end  -->
+    </section>
+
+    <footer class="bg-[#003215] p-5 mt-32">
+        <div class="bg-[#003215] p-5 flex flex-col items-center md:flex-row justify-between">
+            <img class="w-32 p-2 mb-5" src="assets/images/Group 2 (1).png" alt="" />
+            <div class="p-2">
+                <p class="text-white text-center md:text-justify md:pl-2">
+                    Follow Us On
+                </p>
+
+                <div class="flex">
+                    <a href="#"><img class="p-2" src="publicassets/images/icons8_facebook 1.png" alt="" /></a>
+                    <a href="#"><img class="p-2" src="publicassets/images/icons8_instagram 1.png" alt="" /></a>
+                    <a href="#"><img class="p-2" src="publicassets/images/x.png" alt="" /></a>
+                    <a href="#"><img class="p-2" src="publicassets/images/icons8_linkedin 1.png" alt="" /></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-white text-center font-light text-[15px] border-t-2 border-gray-500 pt-5">
+            Copyright © 2025 japonix. All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: "auto", // Auto-size slides
+            spaceBetween: 20, // Space between slides
+            loop: true, // Infinite looping
+            autoplay: {
+                delay: 0, // No delay
+                disableOnInteraction: false,
+            },
+            speed: 3000, // Adjust speed for smooth scrolling
+        });
+    </script>
+    <!-- nav-highlight -->
+    <script src="./js/main.js"></script>
+</body>
+
 </html>
+ 
+
+
+
