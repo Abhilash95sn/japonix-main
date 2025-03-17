@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitcrystal Lutein</title>
+    <link href="./output.css" rel="stylesheet" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <link rel="stylesheet" href="src/style.css"> -->
+</head>
+
+<body class="m-auto">
+    <!-- header content -->
+    <header class="flex justify-between items-center px-4 py-2 fixed z-50 w-full bg-white">
+        <div class="flex justify-center items-center gap-3">
+            <button onclick="document.getElementById('menu').classList.toggle('hidden')"
+                class="md:hidden text-2xl flex justify-center items-center size-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                    <path
+                        d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                </svg>
+            </button>
+            <div>
+                <a href="index.html">
+                <img src="assets/images/logo (2).png" alt="Logo" class="p-2" />
+              </a>
+              </div>
+        </div>
+        <nav id="menu"
+            class="hidden md:flex flex-col md:flex-row md:space-x-6 list-none absolute md:static top-16 left-0 w-full md:w-auto bg-white md:bg-transparent shadow-md md:shadow-none p-4 md:p-0">
+            <li>
+                <a href="index.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    Home
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+            <li>
+                <a href="about.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    About Us
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+            <li>
+                <a href="product.html" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    Products
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+            <li>
+                <a href="product.html#contact" class="py-2 px-4 hover:bg-gray-100 rounded-xl flex flex-col items-center">
+                    Contact
+                    <img class="mt-1 hidden" src="assets/images/Leaf.png" alt="Leaf Icon" />
+                </a>
+            </li>
+        </nav>
+        <a href="product.html#contact">
+            <button
+              class="bg-[#003215] text-white text-xs px-4 py-2 rounded-full hover:bg-[#004315]"
+            >
+              CONTACT US
+            </button>
+          </a>
+    </header>
+    <!-- section content -->
+    <section class="pt-28">
+        <div class="max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg mb-20">
+
+            <div class=" pt-10 pb-10">
+                <h1 class="text-2xl font-bold text-center text-green-600 mb-10"><span class="text-red-600">F</span>itCrystal <span class="text-red-600">L</span>utein</h1>
+                <!-- <div class="grid grid-cols-2 gap-4 mb-4">
+                    <div>
+                        <p><span class="font-bold">Product</span> : L+ Choline Bitartrate USP</p>
+                        <p><span class="font-bold">Batch No.</span> : LCBP-00240724</p>
+                        <p><span class="font-bold">Mfg. Date/</span> : JUL-2024</p>
+                        <p><span class="font-bold">Il.et-est / Exp. Date</span> : JUN-2029</p>
+                    </div>
+                    <div class="text-right">
+                        <p><span class="font-bold">A.R.No.</span> : EFM242500341</p>
+                        <p><span class="font-bold">Batch Size</span> : 1000kg</p>
+                        <p><span class="font-bold">Sampled on</span> : 05/07/2024</p>
+                        <p><span class="font-bold">Page No.</span> : 01 of 01</p>
+                    </div>
+                </div> -->
+                <table class="w-full border-collapse border border-black text-sm">
+              <html>
+
+    <div class="max-w-3xl mx-auto">
+        <h2 class="text-lg font-bold mb-2">FitCrystal Lutein – A Breakthrough in Stability and Absorption</h2>
+        <p class="mb-4">
+            FitCrystal Lutein is a <span class="font-bold">crystalline powder</span> produced through the <span class="font-bold">co-crystallization of natural lutein with an edible coformer</span>. This innovative formulation boasts <span class="font-bold">high lutein content, exceptional physicochemical stability, enhanced solubility, and improved bioavailability</span>, making it ideal for a wide range of applications, including <span class="font-bold">soft capsules, hard capsules, tablets, and gummies</span>.
+        </p>
+        <h3 class="text-lg font-bold mb-2">The Importance of Lutein</h3>
+        <p class="mb-4">
+            Lutein, often referred to as <span class="font-bold">"plant corporin,"</span> is a key pigment found in <span class="font-bold">corn, vegetables, fruits, and flowers</span>. It is also the primary pigment in the <span class="font-bold">macular region of the human retina</span>, playing a crucial role in <span class="font-bold">eye health and cognitive function</span>.
+        </p>
+        <h3 class="text-lg font-bold mb-2">Key Benefits of Lutein</h3>
+        <ul class="list-none mb-4">
+            <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">Protects the Retina</span> – Filters harmful <span class="font-bold">blue light</span> and reduces oxidative stress.</li>
+            <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">Prevents Eye Strain</span> – Helps alleviate <span class="font-bold">dry eyes and myopia</span>.</li>
+            <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">Powerful Antioxidant</span> – Reduces <span class="font-bold">inflammation</span> and protects against cellular damage.</li>
+            <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">Supports Brain Health</span> – Slows down <span class="font-bold">brain aging and cognitive decline</span>.</li>
+        </ul>
+        <hr class="border-gray-700 mb-4">
+        <h3 class="text-lg font-bold mb-2">Why Choose FitCrystal Lutein?</h3>
+        <h4 class="text-lg font-bold mb-2">Overcoming the Limitations of Conventional Lutein</h4>
+        <p class="mb-4">
+            Lutein in its natural form has <span class="font-bold">poor stability</span>, being highly sensitive to <span class="font-bold">light and oxygen</span>. It also has extremely <span class="font-bold">low solubility (&lt;1 µg/mL), making it insoluble in both water and oil</span>. As a result, its bioavailability remains <span class="font-bold">below 10%</span>, significantly restricting its use in <span class="font-bold">food, health supplements, and animal feed</span>.
+        </p>
+        <h4 class="text-lg font-bold mb-2">Limitations of Lutein Ester</h4>
+        <p class="mb-4">
+            Lutein esters, commonly used as a substitute in marketed products, offer <span class="font-bold">greater stability</span> but come with a major drawback:
+        </p>
+        <ul class="list-none mb-4">
+            <li class="mb-2"><i class="fas fa-times text-red-500"></i> <span class="font-bold">They cannot be directly absorbed by the body</span> – They require enzymatic conversion before absorption, leading to <span class="font-bold">poor utilization efficiency</span>.</li>
+        </ul>
+    </div>
+
+
+   
+                <h1 class="text-lg font-bold mb-4">FitCrystal Lutein – A Game Changer in Lutein Supplementation</h1>
+                <p class="mb-4">
+                    FitCrystal <span class="font-bold">Lutein</span> is a <span class="font-bold">next-generation formulation</span> that eliminates the need for <span class="font-bold">microencapsulation</span>, offering <span class="font-bold">remarkably higher drug loading (up to 60% vs. the standard 5%)</span> and superior <span class="font-bold">flowability</span>.
+                </p>
+                <h2 class="text-lg font-bold mb-2">Unmatched Advantages of FitCrystal Lutein</h2>
+                <ul class="list-none mb-4">
+                    <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">Superior Stability</span> – Resistant to degradation from light and oxygen.</li>
+                    <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">Higher Dissolution Rates</span> – Enhances bioavailability for <span class="font-bold">better absorption</span>.</li>
+                    <li class="mb-2"><i class="fas fa-check text-green-500"></i> <span class="font-bold">7x Greater Absorption</span> – Compared to standard lutein crystals, ensuring <span class="font-bold">optimal effectiveness</span>.</li>
+                </ul>
+                <p>
+                    FitCrystal Lutein revolutionizes <span class="font-bold">lutein supplementation</span> by <span class="font-bold">maximizing stability, absorption, and efficacy</span>, making it the ideal choice for <span class="font-bold">eye health, cognitive function, and overall well-being</span>.
+                </p>
+            </div>
+
+    
+
+
+</table>
+
+
+</div>
+            </div>
+
+            <!-- 5th content start  -->
+
+            <div>
+                <h1 class="font-manrope font-bold text-center md:text-3xl">
+                    Contact Our Team
+                </h1>
+                <p class="text-center md:mt-10">
+                    Lorem ipsum dolor sit amet consectetur. Amet cras molestie consequat
+                    morbi. Dapibus id urna consequat morbi orci eget. Diam <br />
+                    aliquam ultrices aliquam enim justo aliquet. Lectus aliquam tellus
+                    vestibulum faucibus et pulvinar quam.
+                </p>
+            </div>
+            <div class="md:flex md:justify-around">
+                <div>
+                    <div class="md:flex md:mt-10">
+                        <div class="mb-4 px-5">
+                            <label for="first_name" class="block text-sm font-medium text-gray-700">First Name</label>
+                            <input type="text" id="first_name" name="first_name" placeholder="First Name"
+                                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                        </div>
+                        <div class="mb-4 px-5">
+                            <label for="last name" class="block text-sm font-medium text-gray-700">Last Name</label>
+                            <input type="text" id="last name" name="last name" placeholder="Last Name"
+                                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                        </div>
+                    </div>
+
+                    <div class="mb-4 px-5">
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                        <input type="text" id="email" name="email" placeholder="You@company.com"
+                            class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                    </div>
+                    <div class="mb-4 px-5">
+                        <label for="phone-number" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                        <div class="mt-1 flex">
+                            <select id="country-code" name="country-code"
+                                class="block w-20 rounded-l-md border border-[#0000002] bg-gray-100 p-2 focus:border-blue-500 focus:ring-blue-500">
+                                <option value="+91">IND</option>
+                                <option value="+1">USA</option>
+                                <option value="+44">UK</option>
+                                <option value="+61">Australia</option>
+                                <option value="+81">Japan</option>
+                            </select>
+                            <input type="text" id="phone-number" name="phone-number" placeholder="Phone Number"
+                                class="block w-full rounded-r-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2" />
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Type your message here..."
+                                class="mt-1 block w-full rounded-md border border-[#0000002] shadow-sm focus:border-blue-500 focus:ring-blue-500 p-2"></textarea>
+                        </div>
+                        <button class="bg-[#003215] text-white w-full rounded-2xl py-2 hover:bg-[#3b7654]">
+                            Send Message
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-10 mx-5 flex justify-center">
+                    <div>
+                        <div class="flex">
+                            <img class="p-5" src="assets/images/icons8_marker 1.png" alt="" />
+                            <div class="flex flex-col justify-center">
+                                <p>Send your queries</p>
+                                <a href="#">info@japonix.com</a>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <img class="p-5" src="assets/images/icons8_marker 1 (1).png" alt="" />
+                            <div class="flex flex-col justify-center">
+                                <p>Get In Contact</p>
+                                +1(203) 913-1007
+                            </div>
+                        </div>
+                        <div class="flex py-2">
+                            <img class="p-5" src="assets/images/icons8_marker 1 (2).png" alt="" />
+                            <div class="flex flex-col justify-center">
+                                <p>Visit Us</p>
+                                <a href="#">1000 Brookside Dr, <br> Fairfield CT 06824, USA</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5th content end  -->
+    </section>
+
+    <footer class="bg-[#003215] p-5 mt-32">
+        <div class="bg-[#003215] p-5 flex flex-col items-center md:flex-row justify-between">
+            <a href="index.html">
+
+                <img class="w-32 p-2 mb-5" src="assets/images/Group 2 (1).png" alt="" />
+              </a>
+                <div class="p-2">
+                  <p class="text-white text-center md:text-justify md:pl-2">
+                    Follow Us On
+                  </p>
+          
+                  <div class="flex gap-4">
+                    <a href="#"
+                      ><img
+                        class="p-2"
+                        src="assets/images/icons8_facebook 1.png"
+                        alt=""
+                    /></a>
+                    <a href="#"
+                      ><img
+                        class="p-2"
+                        src="assets/images/icons8_instagram 1.png"
+                        alt=""
+                    /></a>
+                    <a href="#"><img class="p-2" src="assets/images/x.png" alt="" /></a>
+                    <a href="#"
+                      ><img
+                        class="p-2"
+                        src="assets/images/icons8_linkedin 1.png"
+                        alt=""
+                    /></a>
+                  </div>
+                </div>
+        </div>
+
+        <div class="text-white text-center font-light text-[15px] border-t-2 border-gray-500 pt-5">
+            Copyright © 2025 japonix. All rights reserved
+        </div>
+    </footer>
+
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            slidesPerView: "auto", // Auto-size slides
+            spaceBetween: 20, // Space between slides
+            loop: true, // Infinite looping
+            autoplay: {
+                delay: 0, // No delay
+                disableOnInteraction: false,
+            },
+            speed: 3000, // Adjust speed for smooth scrolling
+        });
+    </script>
+    <!-- nav-highlight -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
